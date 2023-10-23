@@ -10,6 +10,7 @@ function App() {
     try {
       setIsLoding(true);
       const message = await CallGPT();
+      console.log("1231", message, "123");
       setData(message);
     } catch (error) {
     } finally {
